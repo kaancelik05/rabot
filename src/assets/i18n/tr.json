@@ -1,0 +1,16 @@
+{
+  "homepage": "Anasayfa",
+  "services": "Hizmetlerimiz",
+  "servicesMenu": {
+    "chatbotDevelopmentService": "Chatbot Geliştirme Hizmeti",
+    "chatbotIntegrations": "Chatbot Entegrasyonları",
+    "sectoralChatbotSolutions": "Sektörel Chatbot Çözümleri",
+    "chatbotMessagingPanels": "Chatbot Mesajlaşma Panelleri"
+  },
+  "projects": "Projeler",
+  "whoWeAre": "Biz Kimiz",
+  "contact": "İletişim",
+  "turkish": "Türkçe",
+  "english": "İngilizce",
+  "login": "Oturum Aç"
+}

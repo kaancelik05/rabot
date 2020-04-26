@@ -1,0 +1,16 @@
+{
+  "homepage": "Home",
+  "services": "Services",
+  "servicesMenu": {
+    "chatbotDevelopmentService": "Chatbot Development Service",
+    "chatbotIntegrations": "Chatbot Integrations",
+    "sectoralChatbotSolutions": "Sectoral Chatbot Solutions",
+    "chatbotMessagingPanels": "Chatbot Messaging Panels"
+  },
+  "projects": "Projects",
+  "whoWeAre": "Who We Are",
+  "contact": "Contact",
+  "turkish": "Turkish",
+  "english": "English",
+  "login": "Log In"
+}

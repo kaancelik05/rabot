@@ -1,0 +1,21 @@
+<app-preloader></app-preloader>
+
+<ng-container *ngIf="!(location == '/auth/signup' || location == '/auth/signin' || location == '/error-404')">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</ng-container>
+
+<ng-container *ngIf="(location == '/auth/signup' || location == '/auth/signin' || location == '/error-404')">
+    <router-outlet></router-outlet>
+</ng-container>
+
+
+<!-- If you want to show navigation in all pages -->
+<!--
+<ng-container>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</ng-container>
+-->
