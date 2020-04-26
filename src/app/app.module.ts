@@ -32,6 +32,7 @@ import { BlogDetailsComponent } from './components/pages/blog/blog-details/blog-
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { ChatbotDevelopmentServicesComponent } from './components/pages/chatbotDevelopmentService/chatbotDevelopmentServices.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { TranslocoRootModule } from './transloco-root.module';
     BlogGridComponent,
     BlogSidebarComponent,
     BlogDetailsComponent,
-    ContactComponent
+    ContactComponent,
+    ChatbotDevelopmentServicesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

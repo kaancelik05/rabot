@@ -19,10 +19,12 @@ import { BlogGridComponent } from './components/pages/blog/blog-grid/blog-grid.c
 import { BlogSidebarComponent } from './components/pages/blog/blog-sidebar/blog-sidebar.component';
 import { BlogDetailsComponent } from './components/pages/blog/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { ChatbotDevelopmentServicesComponent} from './components/pages/chatbotDevelopmentService/chatbotDevelopmentServices.component';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'home-two', component: HomeTwoComponent },
+    // { path: '', component: HomeComponent },
+    { path: '', component: HomeTwoComponent },
+    { path: 'chatbot-development-services', component: ChatbotDevelopmentServicesComponent },
     { path: 'home-three', component: HomeThreeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'pricing', component: PricingComponent },
