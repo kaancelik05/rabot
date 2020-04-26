@@ -2,7 +2,7 @@
   "name": "spacle-ng",
   "version": "2.1.0",
   "scripts": {
-    "start:heroku": "node dist/server",
+    "start:heroku": "node dist/spacle-ng/server/main.js",
     "postinstall": "npm run build:ssr",
     "ng": "ng",
     "start": "ng serve",
