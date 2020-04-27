@@ -5266,7 +5266,7 @@ Footer Area CSS
         }
     }
     p {
-        color: #acc5db;
+        color: $white-color;
     }
     .services-list {
         padding-left: 0;
@@ -5274,7 +5274,7 @@ Footer Area CSS
         list-style-type: none;
 
         li {
-            color: #acc5db;
+            color: $white-color;
             margin-bottom: 10px;
 
             &:last-child {
@@ -5282,7 +5282,7 @@ Footer Area CSS
             }
             a {
                 display: inline-block;
-                color: #acc5db;
+                color: $white-color;
 
                 &:hover {
                     color: $main-color;
@@ -5297,7 +5297,7 @@ Footer Area CSS
         list-style-type: none;
 
         li {
-            color: #acc5db;
+            color: $white-color;
             margin-bottom: 10px;
 
             &:last-child {
@@ -5305,7 +5305,7 @@ Footer Area CSS
             }
             a {
                 display: inline-block;
-                color: #acc5db;
+                color: $white-color;
 
                 &:hover {
                     color: $main-color;
@@ -5328,7 +5328,7 @@ Footer Area CSS
             }
             a {
                 display: inline-block;
-                color: #acc5db;
+                color: $white-color;
 
                 &:hover {
                     color: $main-color;
@@ -5375,7 +5375,7 @@ Footer Area CSS
     };
     p {
         line-height: initial;
-        color: #acc5db;
+        color: $white-color;
 
         a {
             display: inline-block;
