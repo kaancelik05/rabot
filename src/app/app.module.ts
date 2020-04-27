@@ -33,6 +33,9 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { ChatbotDevelopmentServicesComponent } from './components/pages/chatbotDevelopmentService/chatbotDevelopmentServices.component';
+import { ChatbotIntegrationsComponent } from './components/pages/chatbotIntegrations/chatbotIntegrations.component';
+import { SectoralSolutionsComponent } from './components/pages/sectoralSolutions/sectoralSolutions-component';
+import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessagePanel/chatbotMessagePanel.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +67,10 @@ import { ChatbotDevelopmentServicesComponent } from './components/pages/chatbotD
     BlogSidebarComponent,
     BlogDetailsComponent,
     ContactComponent,
-    ChatbotDevelopmentServicesComponent
+    ChatbotDevelopmentServicesComponent,
+    ChatbotIntegrationsComponent,
+    SectoralSolutionsComponent,
+    ChatbotMessagePanelComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

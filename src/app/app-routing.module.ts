@@ -20,11 +20,17 @@ import { BlogSidebarComponent } from './components/pages/blog/blog-sidebar/blog-
 import { BlogDetailsComponent } from './components/pages/blog/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ChatbotDevelopmentServicesComponent} from './components/pages/chatbotDevelopmentService/chatbotDevelopmentServices.component';
+import { ChatbotIntegrationsComponent } from './components/pages/chatbotIntegrations/chatbotIntegrations.component';
+import { SectoralSolutionsComponent } from './components/pages/sectoralSolutions/sectoralSolutions-component';
+import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessagePanel/chatbotMessagePanel.component';
 
 const routes: Routes = [
     // { path: '', component: HomeComponent },
     { path: '', component: HomeTwoComponent },
     { path: 'chatbot-development-services', component: ChatbotDevelopmentServicesComponent },
+    { path: 'chatbot-integrations', component: ChatbotIntegrationsComponent },
+    { path: 'sectoral-solutions', component: SectoralSolutionsComponent },
+    { path: 'chatbot-message-panel', component: ChatbotMessagePanelComponent },
     { path: 'home-three', component: HomeThreeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'pricing', component: PricingComponent },
