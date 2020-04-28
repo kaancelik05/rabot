@@ -8,7 +8,7 @@
             align: "right",
             showTime: true,
             time: "19:58",
-            img: "assets/img/raboticon.png"
+            img: "assets/img/author-image/rabotikonwhite.png"
         },
         {
             name: "ms2",
@@ -26,7 +26,7 @@
             align: "right",
             showTime: true,
             time: "19:58",
-            img: "assets/img/raboticon.png"
+            img: "assets/img/author-image/rabotikonwhite.png"
         },
         {
             name: "ms4",
@@ -44,7 +44,7 @@
             align: "right",
             showTime: true,
             time: "19:58",
-            img: "assets/img/raboticon.png"
+            img: "assets/img/author-image/rabotikonwhite.png"
         },
         {
             name: "ms6",
@@ -62,7 +62,7 @@
             align: "right",
             showTime: true,
             time: "19:58",
-            img: "assets/img/raboticon.png"
+            img: "assets/img/author-image/rabotikonwhite.png"
         },
         {
             name: "ms8",
@@ -80,7 +80,7 @@
             align: "right",
             showTime: true,
             time: "19:58",
-            img: "assets/img/raboticon.png"
+            img: "assets/img/author-image/rabotikonwhite.png"
         },
         {
             name: "ms10",
