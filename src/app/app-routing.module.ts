@@ -46,7 +46,7 @@ import { WhatsappBlogEnComponent } from './components/pages/blog/whatsapp-blogEn
 import { ContactEnComponent } from './components/pages/contactEn/contactEn.component';
 
 const routes: Routes = [
-    // { path: '', component: HomeComponent },
+    { path: '', component: AnasayfaComponent },
     { path: 'home', component: HomeTwoComponent },
     { path: 'anasayfa', component: AnasayfaComponent },
     { path: 'chatbot-gelistirme-servisleri', component: ChatbotDevelopmentServicesComponent },
