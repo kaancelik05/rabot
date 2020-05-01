@@ -1,69 +1,72 @@
 <!-- Start Footer Area -->
-<footer class="footer-area">
-    <div class="divider"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <div class="logo">
-                        <a routerLink="/">
-                            <img src="assets/img/rabot-logo.png" alt="image">
-                        </a>
+<ng-container *transloco="let t">
+    <footer class="footer-area">
+        <div class="divider"></div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <div class="logo">
+                            <a routerLink="/">
+                                <img src="assets/img/rabot-logo.png" alt="image">
+                            </a>
+                        </div>
+                        <p>{{t('footerDesc')}}</p>
                     </div>
-                    <p>Rabot, Ranna Digital Works’e ait bir girişimdir. RDW, 2016 yılında Chatbot Çözümleri geliştirmeye başlamış, 2019 yılında Chatbot geliştirme çözümlerini Rabot çatısı altında toplamıştır.</p>
+                </div>
+    
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>{{t('services')}}</h3>
+    
+                        <ul class="services-list">
+                            <li><a [routerLink]=" t('chatbotDev') === 'Chatbot Development Services' ? '/chatbot-development-services' : '/chatbot-gelistirme-servisleri'">{{t('chatbotDev')}}</a></li>
+                            <li><a [routerLink]=" t('chatbotInt') === 'Chatbot Integrations' ? '/chatbot-integrations' : '/chatbot-entegrasyonları'">{{t('chatbotInt')}}</a></li>
+                            <li><a [routerLink]=" t('sectorel') === 'Sectoral Chatbot Solutions' ? '/sectoral-chatbot-solutions' : '/sektorel-chatbot-cozumleri'">{{t('sectorel')}}</a></li>
+                            <li><a [routerLink]=" t('servicesMenu.chatbotMessagingPanels') === 'Chatbot Messaging Panels' ? '/chatbot-messaging-and-management-panel' : '/chatbot-mesajlasma-ve-yonetim-paneli'">{{t('servicesMenu.chatbotMessagingPanels')}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>Rabot</h3>
+    
+                        <ul class="support-list">
+                            <li><a [routerLink]="t('whoWeAre') === 'Who We Are' ? '/who-we-are' : '/biz-kimiz'">{{t('whoWeAre')}}</a></li>
+                            <li><a href="/pricing">{{t('projects')}}</a></li>
+                            <li><a [routerLink]="t('blog') === 'enBlog' ? '/en/blog' : '/tr/blog'">Blog</a></li>
+                            <li><a [routerLink]="t('contact') === 'Contact' ? '/contact' : '/iletisim'">{{t('contact')}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>{{t('contact')}}</h3>
+    
+                        <ul class="footer-contact-info">
+                            <li> E-mail: <a href="mailto:hello@rabot.com">hello@rabot.com</a></li>
+                            <li>{{t('phone')}}: <a href="tel:+321754754">+0 (321) 984 754</a></li>
+                        </ul>
+                        <ul class="social">
+                            <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h3>Hizmetlerimiz</h3>
-
-                    <ul class="services-list">
-                        <li><a href="/chatbot-development-services">Chatbot Geliştirme</a></li>
-                        <li><a href="/chatbot-integrations">Chatbot Entegrasyonları</a></li>
-                        <li><a href="/sectoral-solutions">Sektörel Chatbot Çözümleri</a></li>
-                        <li><a href="/chatbot-message-panel">Chatbot Mesajlaşma Panelleri</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h3>Hakkımızda</h3>
-
-                    <ul class="support-list">
-                        <li><a href="/about">Biz Kimiz</a></li>
-                        <li><a href="/pricing">Projeler</a></li>
-                        <li><a href="/blog/blog-grid">Blog</a></li>
-                        <li><a href="/contact">İletişim</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h3>İletişim Bilgileri</h3>
-
-                    <ul class="footer-contact-info">
-                        <li>E-mail: <a href="mailto:hello@rabot.com">hello@rabot.com</a></li>
-                        <li>Telefon: <a href="tel:+321754754">+0 (321) 984 754</a></li>
-                    </ul>
-                    <ul class="social">
-                        <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                    </ul>
-                </div>
+    
+            <div class="copyright-area">
+                <p>&copy; Copyright {{currentYear}} Rabot. Coded by <a href="#" target="_blank">Kaan Çelik</a></p>
             </div>
         </div>
-
-        <div class="copyright-area">
-            <p>&copy; Copyright {{currentYear}} Rabot. Coded by <a href="#" target="_blank">Kaan Çelik</a></p>
-        </div>
-    </div>
-</footer>
-<!-- End Footer Area -->
-
-<div class="go-top"><i class='bx bx-chevron-up'></i></div>
+    </footer>
+    <!-- End Footer Area -->
+    
+    <div class="go-top"><i class='bx bx-chevron-up'></i></div>
+    
+</ng-container>

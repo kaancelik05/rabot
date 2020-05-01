@@ -1,0 +1,72 @@
+<!-- Start Footer Area -->
+<ng-container *transloco="let t">
+    <footer class="footer-area">
+        <div class="divider"></div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <div class="logo">
+                            <a routerLink="/">
+                                <img src="assets/img/rabot-logo.png" alt="image">
+                            </a>
+                        </div>
+                        <p>{{t('footerDesc')}}</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>Services</h3>
+    
+                        <ul class="services-list">
+                            <li><a [href]="selectedLang === 'tr' ? '/chatbot-gelistirme-servisleri' : '/chatbot-development-services'">Chatbot Geliştirme</a></li>
+                            <li><a [href]="selectedLang === 'tr' ? '/chatbot-entegrasyonlari' : '/chatbot-integrations'">Chatbot Entegrasyonları</a></li>
+                            <li><a [href]="selectedLang === 'tr' ? '/sektorel-chatbot-cozumleri' : '/sectoral-solutions'">Sektörel Chatbot Çözümleri</a></li>
+                            <li><a [href]="selectedLang === 'tr' ? '/chatbot-mesajlasma-panelleri' : '/chatbot-message-panel'">Chatbot Mesajlaşma Panelleri</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>Hakkımızda</h3>
+    
+                        <ul class="support-list">
+                            <li><a href="/about">Biz Kimiz</a></li>
+                            <li><a href="/pricing">Projeler</a></li>
+                            <li><a href="/blog/blog-grid">Blog</a></li>
+                            <li><a href="/contact">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>İletişim Bilgileri</h3>
+    
+                        <ul class="footer-contact-info">
+                            <li>E-mail: <a href="mailto:hello@rabot.com">hello@rabot.com</a></li>
+                            <li>Telefon: <a href="tel:+321754754">+0 (321) 984 754</a></li>
+                        </ul>
+                        <ul class="social">
+                            <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="copyright-area">
+                <p>&copy; Copyright {{currentYear}} Rabot. Coded by <a href="#" target="_blank">Kaan Çelik</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+    
+    <div class="go-top"><i class='bx bx-chevron-up'></i></div>
+    
+</ng-container>

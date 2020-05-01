@@ -23,18 +23,60 @@ import { ChatbotDevelopmentServicesComponent} from './components/pages/chatbotDe
 import { ChatbotIntegrationsComponent } from './components/pages/chatbotIntegrations/chatbotIntegrations.component';
 import { SectoralSolutionsComponent } from './components/pages/sectoralSolutions/sectoralSolutions-component';
 import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessagePanel/chatbotMessagePanel.component';
+import { AnasayfaComponent } from './components/pages/anasayfa/anasayfa.component';
+import { AboutEnComponent } from './components/pages/aboutEn/aboutEn.component';
+// tslint:disable-next-line: max-line-length
+import { ChatbotDevelopmentServicesEnComponent } from './components/pages/chatbotDevelopmentServiceEn/chatbotDevelopmentServicesEn.component';
+import { ChatbotIntegrationsEnComponent } from './components/pages/chatbotIntegrationsEn copy/chatbotIntegrationsEn.component';
+import { SectoralSolutionsEnComponent } from './components/pages/sectoralSolutionsEn/sectoralSolutionsEn-component';
+import { ChatbotMessagePanelEnComponent } from './components/pages/chatbotMessagePanelEn/chatbotMessagePanelEn.component';
+import { ArtificialBlogComponent } from './components/pages/blog/artificialBlog/artificial-blog.component';
+import { ArtificialBlogEnComponent } from './components/pages/blog/artificialBlogEn/artificial-blogEn.component';
+import { UniBlogComponent } from './components/pages/blog/üni-blog/uni-blog.component';
+import { UniBlogEnComponent } from './components/pages/blog/üni-blogEn/uni-blogEn.component';
+import { BlogGridEnComponent } from './components/pages/blog/blog-gridEn/blog-gridEn.component';
+import { HealtBlogEnComponent } from './components/pages/blog/healt-blogEn/healt-blogEn.component';
+import { HealtBlogComponent } from './components/pages/blog/healt-blog/healt-blog.component';
+import { FacebookBlogComponent } from './components/pages/blog/facebook-blog/facebook-blog.component';
+import { FacebookBlogEnComponent } from './components/pages/blog/facebook-blogEn/facebook-blogEn.component';
+import { ECommerceBlogComponent } from './components/pages/blog/ecommerce-blog/ecommerce-blog.component';
+import { ECommerceBlogEnComponent } from './components/pages/blog/ecommerce-blogEn/ecommerce-blogEn.component';
+import { WhatsappBlogComponent } from './components/pages/blog/whatsapp-blog/whatsapp-blog.component';
+import { WhatsappBlogEnComponent } from './components/pages/blog/whatsapp-blogEn/whatsapp-blogEn.component';
+import { ContactEnComponent } from './components/pages/contactEn/contactEn.component';
 
 const routes: Routes = [
     // { path: '', component: HomeComponent },
-    { path: '', component: HomeTwoComponent },
-    { path: 'chatbot-development-services', component: ChatbotDevelopmentServicesComponent },
-    { path: 'chatbot-integrations', component: ChatbotIntegrationsComponent },
-    { path: 'sectoral-solutions', component: SectoralSolutionsComponent },
-    { path: 'chatbot-message-panel', component: ChatbotMessagePanelComponent },
+    { path: 'home', component: HomeTwoComponent },
+    { path: 'anasayfa', component: AnasayfaComponent },
+    { path: 'chatbot-gelistirme-servisleri', component: ChatbotDevelopmentServicesComponent },
+    { path: 'chatbot-development-services', component: ChatbotDevelopmentServicesEnComponent },
+    { path: 'chatbot-entegrasyonları', component: ChatbotIntegrationsComponent },
+    { path: 'chatbot-integrations', component: ChatbotIntegrationsEnComponent },
+    { path: 'sektorel-chatbot-cozumleri', component: SectoralSolutionsComponent },
+    { path: 'sectoral-chatbot-solutions', component: SectoralSolutionsEnComponent },
+    { path: 'chatbot-mesajlasma-ve-yonetim-paneli', component: ChatbotMessagePanelComponent },
+    { path: 'chatbot-messaging-and-management-panel', component: ChatbotMessagePanelEnComponent },
     { path: 'home-three', component: HomeThreeComponent },
-    { path: 'about', component: AboutComponent },
+    { path: 'biz-kimiz', component: AboutComponent },
+    { path: 'who-we-are', component: AboutEnComponent},
     { path: 'pricing', component: PricingComponent },
     { path: 'team', component: TeamComponent },
+    { path: 'tr/blog', component: BlogGridComponent },
+    { path: 'en/blog', component: BlogGridEnComponent },
+    { path: 'blog-details', component: BlogDetailsComponent },
+    { path: 'yapay-zeka-destekli-chatbot', component: ArtificialBlogComponent },
+    { path: 'artificial-intelligent-chatbot', component: ArtificialBlogEnComponent },
+    { path: 'universitelerde-chatbot', component: UniBlogComponent },
+    { path: 'chatbot-at-universities', component: UniBlogEnComponent },
+    { path: 'saglik-sektorunde-chatbot', component: HealtBlogComponent },
+    { path: 'chatbot-in-the-healthcare-industry', component: HealtBlogEnComponent },
+    { path: 'tr/facebook-messenger-chatbot', component: FacebookBlogComponent },
+    { path: 'en/facebook-messenger-chatbot', component: FacebookBlogEnComponent },
+    { path: 'e-ticaret-sitesi-icin-chatbotlar', component: ECommerceBlogComponent },
+    { path: 'chatbots-for-e-commerce-website', component: ECommerceBlogEnComponent },
+    { path: 'tr/whatsapp-messenger-chatbot', component: WhatsappBlogComponent },
+    { path: 'en/whatsapp-messenger-chatbot', component: WhatsappBlogEnComponent },
     {
         path: 'features', component: FeaturesComponent,
         children: [
@@ -79,7 +121,8 @@ const routes: Routes = [
         ]
     },
     { path: 'faq', component: FaqComponent },
-    { path: 'contact', component: ContactComponent },
+    { path: 'iletisim', component: ContactComponent },
+    { path: 'contact', component: ContactEnComponent },
     { path: '**', component: ErrorComponent },
 ];
 

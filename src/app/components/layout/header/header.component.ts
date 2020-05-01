@@ -18,13 +18,14 @@ export class HeaderComponent implements OnInit {
 
     location: any;
     navClass: any;
-    selectedFlagIcon = 'flag-icon flag-icon-tr';
+    selectedLang;
 
     constructor(
         private router: Router, private service: TranslocoService
     ) { }
 
     ngOnInit() {
+        this.selectedLang = this.service.getActiveLang();
         this.router.events
             .subscribe((event) => {
                 if (event instanceof NavigationEnd) {
@@ -40,8 +41,10 @@ export class HeaderComponent implements OnInit {
 
     change(lang: string) {
         this.service.setActiveLang(lang);
-        if (lang === 'tr') { this.selectedFlagIcon = 'flag-icon flag-icon-tr'; }
-        if (lang === 'en') { this.selectedFlagIcon = 'flag-icon flag-icon-us'; }
+        this.selectedLang = this.service.getActiveLang();
+        if (this.selectedLang === 'tr') { this.router.navigateByUrl('/anasayfa'); } else {
+            this.router.navigateByUrl('/home');
+        }
     }
 
 }

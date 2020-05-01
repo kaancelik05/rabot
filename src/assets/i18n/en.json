@@ -12,5 +12,11 @@
   "contact": "Contact",
   "turkish": "TR",
   "english": "ENG",
-  "login": "Log In"
+  "login": "Log In",
+  "footerDesc": "Rabot is an initiative of Ranna Digital Works. RDW started developing Chatbot Solutions in 2016 and gathered Chatbot development solutions under the umbrella of Rabot in 2019.",
+  "chatbotDev":"Chatbot Development Services",
+  "chatbotInt": "Chatbot Integrations",
+  "sectorel": "Sectoral Chatbot Solutions",
+  "blog": "enBlog",
+  "phone": "Phone:"
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
     selector: 'app-chatting',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChattingComponent implements OnInit {
 
-    constructor() { }
+    constructor(
+        private service: TranslocoService
+    ) { }
+
+    selectedLang;
 
     ngOnInit() {
+        this.selectedLang = this.service.getActiveLang();
     }
 
 }

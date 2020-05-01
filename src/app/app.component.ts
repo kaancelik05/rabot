@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import { TranslocoService } from '@ngneat/transloco';
 declare let $: any;
 
 @Component({
@@ -18,12 +19,14 @@ declare let $: any;
 export class AppComponent implements OnInit, OnDestroy {
     location: any;
     routerSubscription: any;
+    selectedLang;
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private service: TranslocoService) {
     }
 
     ngOnInit(){
         this.recallJsFuntions();
+        this.selectedLang = this.service.getActiveLang();
     }
 
     recallJsFuntions() {
@@ -38,6 +41,7 @@ export class AppComponent implements OnInit, OnDestroy {
             .subscribe(event => {
                 $.getScript('../assets/js/custom.js');
                 $.getScript('../assets/js/conversation.js');
+                $.getScript('../assets/js/conversationEn.js');
                 $('.preloader-area').fadeOut('slow');
                 this.location = this.router.url;
                 if (!(event instanceof NavigationEnd)) {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-footer',
@@ -6,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  constructor(
+    private service: TranslocoService
+  ) { }
 
-    currentYear: any;
+  currentYear: any;
+  selectedLang;
 
-    constructor() { }
-
-    ngOnInit() {
-        this.currentYear = new Date().getFullYear();
-    }
+  ngOnInit() {
+    this.currentYear = new Date().getFullYear();
+    this.selectedLang = this.service.getActiveLang();
+  }
 
 }

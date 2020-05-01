@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PreloaderComponent } from './components/layout/preloader/preloader.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { FooterEnComponent } from './components/layout/footerEn/footerEn.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ChattingComponent } from './components/common/chatting/chatting.component';
 import { PartnerComponent } from './components/common/partner/partner.component';
@@ -36,6 +37,26 @@ import { ChatbotDevelopmentServicesComponent } from './components/pages/chatbotD
 import { ChatbotIntegrationsComponent } from './components/pages/chatbotIntegrations/chatbotIntegrations.component';
 import { SectoralSolutionsComponent } from './components/pages/sectoralSolutions/sectoralSolutions-component';
 import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessagePanel/chatbotMessagePanel.component';
+import { AnasayfaComponent } from './components/pages/anasayfa/anasayfa.component';
+import { AboutEnComponent } from './components/pages/aboutEn/aboutEn.component';
+import { ChatbotDevelopmentServicesEnComponent } from './components/pages/chatbotDevelopmentServiceEn/chatbotDevelopmentServicesEn.component';
+import { ChatbotIntegrationsEnComponent } from './components/pages/chatbotIntegrationsEn copy/chatbotIntegrationsEn.component';
+import { SectoralSolutionsEnComponent } from './components/pages/sectoralSolutionsEn/sectoralSolutionsEn-component';
+import { ChatbotMessagePanelEnComponent } from './components/pages/chatbotMessagePanelEn/chatbotMessagePanelEn.component';
+import { ArtificialBlogComponent } from './components/pages/blog/artificialBlog/artificial-blog.component';
+import { ArtificialBlogEnComponent } from './components/pages/blog/artificialBlogEn/artificial-blogEn.component';
+import { UniBlogComponent } from './components/pages/blog/üni-blog/uni-blog.component';
+import { UniBlogEnComponent } from './components/pages/blog/üni-blogEn/uni-blogEn.component';
+import { BlogGridEnComponent } from './components/pages/blog/blog-gridEn/blog-gridEn.component';
+import { HealtBlogEnComponent } from './components/pages/blog/healt-blogEn/healt-blogEn.component';
+import { HealtBlogComponent } from './components/pages/blog/healt-blog/healt-blog.component';
+import { FacebookBlogComponent } from './components/pages/blog/facebook-blog/facebook-blog.component';
+import { FacebookBlogEnComponent } from './components/pages/blog/facebook-blogEn/facebook-blogEn.component';
+import { ECommerceBlogComponent } from './components/pages/blog/ecommerce-blog/ecommerce-blog.component';
+import { ECommerceBlogEnComponent } from './components/pages/blog/ecommerce-blogEn/ecommerce-blogEn.component';
+import { WhatsappBlogComponent } from './components/pages/blog/whatsapp-blog/whatsapp-blog.component';
+import { WhatsappBlogEnComponent } from './components/pages/blog/whatsapp-blogEn/whatsapp-blogEn.component';
+import { ContactEnComponent } from './components/pages/contactEn/contactEn.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +64,7 @@ import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessageP
     PreloaderComponent,
     HeaderComponent,
     FooterComponent,
+    FooterEnComponent,
     HomeComponent,
     ChattingComponent,
     PartnerComponent,
@@ -52,6 +74,7 @@ import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessageP
     HomeTwoComponent,
     HomeThreeComponent,
     AboutComponent,
+    AboutEnComponent,
     PricingComponent,
     TeamComponent,
     FeaturesComponent,
@@ -64,13 +87,32 @@ import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessageP
     ErrorComponent,
     BlogComponent,
     BlogGridComponent,
+    BlogGridEnComponent,
     BlogSidebarComponent,
     BlogDetailsComponent,
     ContactComponent,
+    ContactEnComponent,
     ChatbotDevelopmentServicesComponent,
+    ChatbotDevelopmentServicesEnComponent,
     ChatbotIntegrationsComponent,
+    ChatbotIntegrationsEnComponent,
     SectoralSolutionsComponent,
-    ChatbotMessagePanelComponent
+    SectoralSolutionsEnComponent,
+    ChatbotMessagePanelComponent,
+    ChatbotMessagePanelEnComponent,
+    AnasayfaComponent,
+    ArtificialBlogComponent,
+    ArtificialBlogEnComponent,
+    UniBlogComponent,
+    UniBlogEnComponent,
+    HealtBlogComponent,
+    HealtBlogEnComponent,
+    FacebookBlogComponent,
+    FacebookBlogEnComponent,
+    ECommerceBlogComponent,
+    ECommerceBlogEnComponent,
+    WhatsappBlogComponent,
+    WhatsappBlogEnComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

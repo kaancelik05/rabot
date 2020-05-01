@@ -12,5 +12,11 @@
   "contact": "İletişim",
   "turkish": "TR",
   "english": "ENG",
-  "login": "Oturum Aç"
+  "login": "Oturum Aç",
+  "footerDesc": "Rabot, Ranna Digital Works’e ait bir girişimdir. RDW, 2016 yılında Chatbot Çözümleri geliştirmeye başlamış, 2019 yılında Chatbot geliştirme çözümlerini Rabot çatısı altında toplamıştır",
+  "chatbotDev": "Chatbot Geliştirme Hizmetleri",
+  "chatbotInt": "Chatbot Entegrasyonları",
+  "sectorel": "Sektörel Chatbot Çözümleri",
+  "blog": "trBlog",
+  "phone": "Telefon:"
 }

@@ -50,6 +50,7 @@
                 "src/assets/js/odometer.min.js",
                 "src/assets/js/wow.min.js",
                 "src/assets/js/conversation.js",
+                "src/assets/js/conversationEn.js",
                 "src/assets/js/custom.js"
             ]
           },
