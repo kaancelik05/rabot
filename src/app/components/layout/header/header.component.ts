@@ -30,7 +30,8 @@ export class HeaderComponent implements OnInit {
             .subscribe((event) => {
                 if (event instanceof NavigationEnd) {
                     this.location = this.router.url;
-                    if (this.location === '/' || this.location === '/home-two' || this.location === '/home-three') {
+                    if (this.location === '/' || this.location === '/home-two' || this.location === '/home-three' ||
+                        this.location === '/home' || this.location === '/anasayfa') {
                         this.navClass = 'navbar-area';
                     } else {
                         this.navClass = 'navbar-area navbar-style-two';

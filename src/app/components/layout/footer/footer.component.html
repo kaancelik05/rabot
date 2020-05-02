@@ -36,7 +36,7 @@
                         <ul class="support-list">
                             <li><a [routerLink]="t('whoWeAre') === 'Who We Are' ? '/who-we-are' : '/biz-kimiz'">{{t('whoWeAre')}}</a></li>
                             <li><a href="/pricing">{{t('projects')}}</a></li>
-                            <li><a [routerLink]="t('blog') === 'enBlog' ? '/en/blog' : '/tr/blog'">Blog</a></li>
+                            <li><a [routerLink]="t('blog') === 'enBlog' ? '/blog-news' : '/blog-haberler'">{{t('blogNews')}}</a></li>
                             <li><a [routerLink]="t('contact') === 'Contact' ? '/contact' : '/iletisim'">{{t('contact')}}</a></li>
                         </ul>
                     </div>
@@ -47,8 +47,8 @@
                         <h3>{{t('contact')}}</h3>
     
                         <ul class="footer-contact-info">
-                            <li> E-mail: <a href="mailto:hello@rabot.com">hello@rabot.com</a></li>
-                            <li>{{t('phone')}}: <a href="tel:+321754754">+0 (321) 984 754</a></li>
+                            <li> E-mail: <a href="mailto:info@rabot.chat">info@rabot.chat</a></li>
+                            <li>{{t('phone')}}: <a href="tel:+902166290659">+90 (216) 629 0659</a></li>
                         </ul>
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>

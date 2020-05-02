@@ -40,7 +40,7 @@ import { ChatbotMessagePanelComponent } from './components/pages/chatbotMessageP
 import { AnasayfaComponent } from './components/pages/anasayfa/anasayfa.component';
 import { AboutEnComponent } from './components/pages/aboutEn/aboutEn.component';
 import { ChatbotDevelopmentServicesEnComponent } from './components/pages/chatbotDevelopmentServiceEn/chatbotDevelopmentServicesEn.component';
-import { ChatbotIntegrationsEnComponent } from './components/pages/chatbotIntegrationsEn copy/chatbotIntegrationsEn.component';
+import { ChatbotIntegrationsEnComponent } from './components/pages/chatbotIntegrationsEn/chatbotIntegrationsEn.component';
 import { SectoralSolutionsEnComponent } from './components/pages/sectoralSolutionsEn/sectoralSolutionsEn-component';
 import { ChatbotMessagePanelEnComponent } from './components/pages/chatbotMessagePanelEn/chatbotMessagePanelEn.component';
 import { ArtificialBlogComponent } from './components/pages/blog/artificialBlog/artificial-blog.component';

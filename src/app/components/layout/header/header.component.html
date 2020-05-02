@@ -58,25 +58,28 @@
                                 <a [routerLink]="selectedLang === 'tr' ? '/biz-kimiz' : '/who-we-are'" routerLinkActive="active" class="nav-link">{{t('whoWeAre')}}</a>
                             </li>
                             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                <a [routerLink]="selectedLang === 'tr' ? '/tr/blog' : '/en/blog'" routerLinkActive="active" class="nav-link">Blog</a>
+                                <a [routerLink]="selectedLang === 'tr' ? '/blog-haberler' : '/blog-news'" routerLinkActive="active" class="nav-link">{{t('blogNews')}}</a>
                             </li>
 
                             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                                 <a [routerLink]="selectedLang === 'tr' ? '/iletisim' : '/contact'" routerLinkActive="active" class="nav-link">{{t('contact')}}</a>
                             </li>
-                            <div class="dropdown" style="margin-left: 10px;margin-top:2%">
-                                <button class="btn btn-light" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                            <li class="nav-item dropdown">
+                                <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">
                                     <div class="icon">
                                         <img src="assets/img/world.png" style="height: 22px;" alt="logo">
                                     </div>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" (click)="change('tr')">{{t('turkish')}}</a>
-                                    <a class="dropdown-item" (click)="change('en')">{{t('english')}}</a>
-                                </div>
-                            </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                        <a class="dropdown-item" (click)="change('tr')">{{t('turkish')}}</a>
+                                    </li>
+
+                                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                        <a class="dropdown-item" (click)="change('en')">{{t('english')}}</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
 
 

@@ -27,7 +27,7 @@ import { AnasayfaComponent } from './components/pages/anasayfa/anasayfa.componen
 import { AboutEnComponent } from './components/pages/aboutEn/aboutEn.component';
 // tslint:disable-next-line: max-line-length
 import { ChatbotDevelopmentServicesEnComponent } from './components/pages/chatbotDevelopmentServiceEn/chatbotDevelopmentServicesEn.component';
-import { ChatbotIntegrationsEnComponent } from './components/pages/chatbotIntegrationsEn copy/chatbotIntegrationsEn.component';
+import { ChatbotIntegrationsEnComponent } from './components/pages/chatbotIntegrationsEn/chatbotIntegrationsEn.component';
 import { SectoralSolutionsEnComponent } from './components/pages/sectoralSolutionsEn/sectoralSolutionsEn-component';
 import { ChatbotMessagePanelEnComponent } from './components/pages/chatbotMessagePanelEn/chatbotMessagePanelEn.component';
 import { ArtificialBlogComponent } from './components/pages/blog/artificialBlog/artificial-blog.component';
@@ -57,13 +57,13 @@ const routes: Routes = [
     { path: 'sectoral-chatbot-solutions', component: SectoralSolutionsEnComponent },
     { path: 'chatbot-mesajlasma-ve-yonetim-paneli', component: ChatbotMessagePanelComponent },
     { path: 'chatbot-messaging-and-management-panel', component: ChatbotMessagePanelEnComponent },
-    { path: 'home-three', component: HomeThreeComponent },
+    // { path: 'home-three', component: HomeThreeComponent },
     { path: 'biz-kimiz', component: AboutComponent },
     { path: 'who-we-are', component: AboutEnComponent},
     { path: 'pricing', component: PricingComponent },
-    { path: 'team', component: TeamComponent },
-    { path: 'tr/blog', component: BlogGridComponent },
-    { path: 'en/blog', component: BlogGridEnComponent },
+    // { path: 'team', component: TeamComponent },
+    { path: 'blog-haberler', component: BlogGridComponent },
+    { path: 'blog-news', component: BlogGridEnComponent },
     { path: 'blog-details', component: BlogDetailsComponent },
     { path: 'yapay-zeka-destekli-chatbot', component: ArtificialBlogComponent },
     { path: 'artificial-intelligent-chatbot', component: ArtificialBlogEnComponent },
