@@ -571,7 +571,7 @@ Navbar Area CSS
                                 weight: 500;
                             };
                             &:hover, &:focus, &.active {
-                                color: $black-color;
+                                color: $main-color;
                             }
                         }
                         &:last-child {
@@ -899,6 +899,7 @@ Navbar Area CSS
             }
         }
     }
+    
     .navbar-light {
         .navbar-toggler {
             color: $black-color;

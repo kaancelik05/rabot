@@ -1,0 +1,11 @@
+.dropdown-item{
+  background-color: white;
+  &:hover {
+      background-color: #A9A9A9 !important;
+  }
+}
+
+.privateNav{
+  min-width: 5rem !important;
+  width: 20px !important;
+}
