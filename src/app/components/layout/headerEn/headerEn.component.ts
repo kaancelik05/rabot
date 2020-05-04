@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss'],
+    selector: 'app-header-en',
+    templateUrl: './headerEn.component.html',
+    styleUrls: ['./headerEn.component.scss'],
     providers: [
         Location, {
             provide: LocationStrategy,
@@ -13,7 +13,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
         }
     ]
 })
-export class HeaderComponent {
+export class HeaderEnComponent {
 
     constructor(
         private router: Router

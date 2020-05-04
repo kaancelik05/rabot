@@ -1,9 +1,13 @@
 <app-preloader></app-preloader>
 
 <ng-container *ngIf="!(location == '/auth/signup' || location == '/auth/signin' || location == '/error-404')">
-    <app-header></app-header>
+    <app-header *ngIf="lang === 'tr' && location != '/anasayfa'"></app-header>
+    <app-header-home *ngIf="lang === 'tr' && location == '/anasayfa'"></app-header-home>
+    <app-header-en *ngIf="lang === 'en' && location != '/home'"></app-header-en>
+    <app-header-home-en *ngIf="lang === 'en' && location == '/home'"></app-header-home-en>
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <app-footer *ngIf="lang === 'tr'"></app-footer>
+    <app-footer-en *ngIf="lang === 'en'"></app-footer-en>
 </ng-container>
 
 <ng-container *ngIf="(location == '/auth/signup' || location == '/auth/signin' || location == '/error-404')">

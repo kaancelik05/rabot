@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslocoService } from '@ngneat/transloco';
+import { Router } from '@angular/router';
+
 
 @Component({
     selector: 'app-chatting',
@@ -9,13 +10,13 @@ import { TranslocoService } from '@ngneat/transloco';
 export class ChattingComponent implements OnInit {
 
     constructor(
-        private service: TranslocoService
+        private router: Router
     ) { }
 
-    selectedLang;
+    url;
 
     ngOnInit() {
-        this.selectedLang = this.service.getActiveLang();
+        this.url = this.router.url;
     }
 
 }

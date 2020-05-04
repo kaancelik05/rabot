@@ -32,7 +32,6 @@ import { BlogSidebarComponent } from './components/pages/blog/blog-sidebar/blog-
 import { BlogDetailsComponent } from './components/pages/blog/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
-import { TranslocoRootModule } from './transloco-root.module';
 import { ChatbotDevelopmentServicesComponent } from './components/pages/chatbotDevelopmentService/chatbotDevelopmentServices.component';
 import { ChatbotIntegrationsComponent } from './components/pages/chatbotIntegrations/chatbotIntegrations.component';
 import { SectoralSolutionsComponent } from './components/pages/sectoralSolutions/sectoralSolutions-component';
@@ -57,12 +56,18 @@ import { ECommerceBlogEnComponent } from './components/pages/blog/ecommerce-blog
 import { WhatsappBlogComponent } from './components/pages/blog/whatsapp-blog/whatsapp-blog.component';
 import { WhatsappBlogEnComponent } from './components/pages/blog/whatsapp-blogEn/whatsapp-blogEn.component';
 import { ContactEnComponent } from './components/pages/contactEn/contactEn.component';
+import { HeaderEnComponent } from './components/layout/headerEn/headerEn.component';
+import { HeaderHomeComponent } from './components/layout/headerHome/headerHome.component';
+import { HeaderHomeEnComponent } from './components/layout/headerHomeEn/headerHomeEn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PreloaderComponent,
     HeaderComponent,
+    HeaderEnComponent,
+    HeaderHomeComponent,
+    HeaderHomeEnComponent,
     FooterComponent,
     FooterEnComponent,
     HomeComponent,
@@ -112,13 +117,13 @@ import { ContactEnComponent } from './components/pages/contactEn/contactEn.compo
     ECommerceBlogComponent,
     ECommerceBlogEnComponent,
     WhatsappBlogComponent,
-    WhatsappBlogEnComponent
+    WhatsappBlogEnComponent,
+    FooterEnComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
-    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]

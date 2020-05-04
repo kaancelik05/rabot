@@ -1,8 +1,7 @@
 <!-- Start Footer Area -->
-<ng-container *transloco="let t">
     <footer class="footer-area">
         <div class="divider"></div>
-    
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -12,43 +11,58 @@
                                 <img src="assets/img/rabot-logo.png" alt="image">
                             </a>
                         </div>
-                        <p style="width:270px">{{t('footerDesc')}}</p>
+                        <p style="width:270px">Rabot, Ranna Digital Works’e ait bir girişimdir. RDW, 2016 yılında
+                            Chatbot Çözümleri geliştirmeye başlamış, 2019 yılında Chatbot geliştirme çözümlerini Rabot
+                            çatısı altında toplamıştır</p>
                     </div>
                 </div>
-    
+
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h3>{{t('services')}}</h3>
-    
+                        <h3>Hizmetlerimiz</h3>
+
                         <ul class="services-list" style="width: 175px;">
-                            <li><a [routerLink]=" t('chatbotDev') === 'Chatbot Development Services' ? '/chatbot-development-services' : '/chatbot-gelistirme-servisleri'">{{t('chatbotDev')}}</a></li>
-                            <li><a [routerLink]=" t('chatbotInt') === 'Chatbot Integrations' ? '/chatbot-integrations' : '/chatbot-entegrasyonları'">{{t('chatbotInt')}}</a></li>
-                            <li><a [routerLink]=" t('sectorel') === 'Sectoral Chatbot Solutions' ? '/sectoral-chatbot-solutions' : '/sektorel-chatbot-cozumleri'">{{t('sectorel')}}</a></li>
-                            <li><a [routerLink]=" t('servicesMenu.chatbotMessagingPanels') === 'Chatbot Messaging Panels' ? '/chatbot-messaging-and-management-panel' : '/chatbot-mesajlasma-ve-yonetim-paneli'">{{t('servicesMenu.chatbotMessagingPanels')}}</a></li>
+                            <li><a routerLink="/chatbot-gelistirme-servisleri">Chatbot Geliştirme Hizmetleri</a>
+                            </li>
+                            <li>
+                                <a routerLink="/chatbot-entegrasyonları">Chatbot Entegrasyonları</a>
+                            </li>
+                            <li>
+                                <a routerLink="/sektorel-chatbot-cozumleri">Sektörel Chatbot Çözümleri</a>
+                            </li>
+                            <li>
+                                <a routerLink="/chatbot-mesajlasma-ve-yonetim-paneli">Chatbot Mesajlaşma Panelleri</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-    
+
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h3>Rabot</h3>
-    
+
                         <ul class="support-list">
-                            <li><a [routerLink]="t('whoWeAre') === 'Who We Are' ? '/who-we-are' : '/biz-kimiz'">{{t('whoWeAre')}}</a></li>
-                            <li><a href="/pricing">{{t('projects')}}</a></li>
-                            <li><a [routerLink]="t('blog') === 'enBlog' ? '/blog-news' : '/blog-haberler'">{{t('blogNews')}}</a></li>
-                            <li><a [routerLink]="t('contact') === 'Contact' ? '/contact' : '/iletisim'">{{t('contact')}}</a></li>
+                            <li>
+                                <a routerLink="/biz-kimiz">Biz Kimiz</a>
+                            </li>
+                            <li><a routerLink="/pricing">Projeler</a></li>
+                            <li>
+                                <a routerLink="/blog-haberler">Blog & Haberler</a>
+                            </li>
+                            <li>
+                                <a routerLink="/iletisim">İletişim</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-    
+
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h3>{{t('contact')}}</h3>
-    
+                        <h3>İletişim</h3>
+
                         <ul class="footer-contact-info">
                             <li> E-mail: <a href="mailto:info@rabot.chat">info@rabot.chat</a></li>
-                            <li>{{t('phone')}} <a href="tel:+902166290659">+90 (216) 629 0659</a></li>
+                            <li> Telefon: <a href="tel:+902166290659">+90 (216) 629 0659</a></li>
                         </ul>
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
@@ -59,14 +73,12 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="copyright-area">
                 <p>&copy; Copyright {{currentYear}} Rabot. Coded by <a href="#" target="_blank">Kaan Çelik</a></p>
             </div>
         </div>
     </footer>
     <!-- End Footer Area -->
-    
+
     <div class="go-top"><i class='bx bx-chevron-up'></i></div>
-    
-</ng-container>

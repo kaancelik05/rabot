@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
-import { TranslocoService } from '@ngneat/transloco';
 declare let $: any;
 
 @Component({
@@ -21,18 +20,56 @@ export class AppComponent implements OnInit, OnDestroy {
     routerSubscription: any;
     selectedLang;
 
-    constructor(private router: Router, private service: TranslocoService) {
+    enPages = [
+        '/home',
+        '/chatbot-development-services',
+        '/chatbot-integrations',
+        '/sectoral-chatbot-solutions',
+        '/chatbot-messaging-and-management-panel',
+        '/who-we-are',
+        '/pricing',
+        '/blog-news',
+        '/artificial-intelligent-chatbot',
+        '/chatbot-at-universities',
+        '/chatbot-in-the-healthcare-industry',
+        '/en/facebook-messenger-chatbot',
+        '/chatbots-for-e-commerce-website',
+        '/en/whatsapp-messenger-chatbot',
+        '/contact'
+    ];
+
+    trPages = [
+        '/',
+        '/anasayfa',
+        '/chatbot-gelistirme-servisleri',
+        '/chatbot-entegrasyonları',
+        '/sektorel-chatbot-cozumleri',
+        '/chatbot-mesajlasma-ve-yonetim-paneli',
+        '/biz-kimiz',
+        '/pricing',
+        '/blog-haberler',
+        '/yapay-zeka-destekli-chatbot',
+        '/universitelerde-chatbot',
+        '/saglik-sektorunde-chatbot',
+        '/tr/facebook-messenger-chatbot',
+        '/e-ticaret-sitesi-icin-chatbotlar',
+        '/tr/whatsapp-messenger-chatbot',
+        '/iletisim'
+    ];
+    lang;
+
+    constructor(private router: Router) {
     }
 
-    ngOnInit(){
+    ngOnInit() {
         this.recallJsFuntions();
-        this.selectedLang = this.service.getActiveLang();
+
     }
 
     recallJsFuntions() {
         this.router.events
             .subscribe((event) => {
-                if ( event instanceof NavigationStart ) {
+                if (event instanceof NavigationStart) {
                     $('.preloader-area').fadeIn('slow');
                 }
             });
@@ -44,6 +81,12 @@ export class AppComponent implements OnInit, OnDestroy {
                 $.getScript('../assets/js/conversationEn.js');
                 $('.preloader-area').fadeOut('slow');
                 this.location = this.router.url;
+                if (this.enPages.includes(this.location)) {
+                    this.lang = 'en';
+                } else {
+                    this.lang = 'tr';
+                }
+                console.log(this.location);
                 if (!(event instanceof NavigationEnd)) {
                     return;
                 }
