@@ -25,7 +25,8 @@ export class HeaderComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.selectedLang = this.service.getActiveLang();
+        // this.selectedLang = this.service.getActiveLang();
+        this.selectedLang = localStorage.getItem('selectedLang');
         this.router.events
             .subscribe((event) => {
                 if (event instanceof NavigationEnd) {
@@ -42,6 +43,8 @@ export class HeaderComponent implements OnInit {
 
     change(lang: string) {
         this.service.setActiveLang(lang);
+        localStorage.setItem('selectedLang', lang);
+        // localStorage.setItem('selectedLang', lang);
         this.selectedLang = this.service.getActiveLang();
         if (this.selectedLang === 'tr') { this.router.navigateByUrl('/anasayfa'); } else {
             this.router.navigateByUrl('/home');

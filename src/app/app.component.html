@@ -3,8 +3,7 @@
 <ng-container *ngIf="!(location == '/auth/signup' || location == '/auth/signin' || location == '/error-404')">
     <app-header></app-header>
     <router-outlet></router-outlet>
-    <app-footer *ngIf="selectedLang === 'tr'"></app-footer>
-    <app-footer-en *ngIf="selectedLang === 'en'"></app-footer-en>
+    <app-footer></app-footer>
 </ng-container>
 
 <ng-container *ngIf="(location == '/auth/signup' || location == '/auth/signin' || location == '/error-404')">
